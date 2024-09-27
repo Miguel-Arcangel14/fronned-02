@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- TEXTO DE GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
+
+    <!-- Incluye la hoja de estilos de Bootstrap desde un CDN para tener acceso a sus componentes y diseño responsive -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Incluye la librería de íconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!-- Vincula el archivo CSS personalizado para los estilos adicionales -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Barra de navegación fija en la parte superior con esquema de colores oscuro -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #0b2038;">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <!-- Espacio antes del logo (equivalente a columna 1) -->
+            <div class="flex-grow-1"></div>
+
+            <!-- Logo (equivalente a columnas 2 y 3) -->
+            <a class="navbar-brand" href="#">
+                <img src="img/logo_cloudflex.png" alt="logo_cloudflex" width="167" height="56">
+            </a>
+
+            <!-- Espacio después del logo (equivalente a columna 4) -->
+            <div class="flex-grow-1"></div>
+
+            <!-- Botón de menú para pantallas pequeñas -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Enlaces de navegación (equivalente a columnas 5 a 8) -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav d-flex justify-content-center flex-grow-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SERVICE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">NEWS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Espacio antes del soporte (equivalente a columna 9) -->
+            <div class="flex-grow-1"></div>
+
+            <!-- Soporte (equivalente a columnas 10 y 11) -->
+            <div class="d-flex align-items-center">
+                <div>
+                    <i class="bi bi-telephone"></i> Support <br> +1 307 09 13
+                </div>
+            </div>
+
+            <!-- Espacio después del soporte (equivalente a columna 12) -->
+            <div class="flex-grow-1"></div>
+
+        </div>
+    </nav>
+
+    <!-- ------------------------------------------------------------------------------------------- -->
+    <main>
+
+        <section class="banner1 ">
+            <br>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="titulo-prin col-md-8">
+                        <h1>Unlimited</h1>
+                        <h2>Web Hosting</h2>
+                        <p>Lorem ipsum sit amet, consectetur adipiscing elit, sed do <br>
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+                            Egestas purus viverra accumsan in nisl nisi.</p>
+
+                        <br>
+                        <br>
+
+                        <!-- Formulario de búsqueda con selector de dominio -->
+                        <div class="barra-busqueda">
+                            <form class="d-flex search-box" role="search">
+                                <!-- Campo de búsqueda -->
+                                <input class="form-control search-input" type="search" placeholder="Buscar"
+                                    aria-label="Buscar">
+
+                                <!-- Dropdown de dominios con símbolo de flecha hacia abajo -->
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle domain-select" type="button"
+                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                        .com
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <li><a class="dropdown-item" href="#">.com</a></li>
+                                        <li><a class="dropdown-item" href="#">.pe</a></li>
+                                        <li><a class="dropdown-item" href="#">.online</a></li>
+                                        <li><a class="dropdown-item" href="#">.xyz</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Botón de búsqueda -->
+                                <button class="btn btn-starfree" type="submit">Star Free</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="titulo-img col-md-4">
+                        <div class="chip-img">
+                            <img src="img/chipNube_ver.png" alt="chip_nube">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="banner2">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <br>
+                        <div class="garra-img">
+                            <img src="img/img-garra.png" alt="chip_nube">
+                        </div>
+                    </div>
+
+                    <div class="text-awesome col-md-6">
+                        <br>
+
+                        <button class="btn btn-awesome" type="submit">Awesome Customer Services</button>
+                        <br>
+                        <br>
+                        <h1>Awesome Customer Services</h1>
+                        <p class="parrafo-norm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="banner3">
+            <div class="cartas container">
+                <div class="card__container">
+
+                    <article class="card__article">
+                        <img src="img/S_securi.png" alt="image1" class="card__img">
+
+                        <div class="card__data">
+                            <span class="card__description">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt labore et dolore magna alqua
+                                egestas purus viverra accumsam
+                            </span>
+                            <h2 class="card__title">Scalable Host Storages</h2>
+                            <a href="#" class="card__button">READ MORE</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article">
+                        <img src="img/S_pass_ver.png" alt="image1" class="card__img">
+
+                        <div class="card__data">
+                            <span class="card__description">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt labore et dolore magna alqua
+                                egestas purus viverra accumsam</span>
+                            <h2 class="card__title">PaaS Technology Passed</h2>
+                            <a href="#" class="card__button">READ MORE</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article">
+                        <img src="img/b_goo.png" alt="image1" class="card__img">
+
+                        <div class="card__data">
+                            <span class="card__description">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt labore et dolore magna alqua
+                                egestas purus viverra accumsam</span>
+                            <h2 class="card__title">Unlimited Traffics</h2>
+                            <a href="#" class="card__button">READ MORE</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="banner4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="text-awesome col-md-6">
+                        <br>
+                        <button class="btn btn-awesome" type="submit">Lorem ipsum dolor sit amet dicariopted</button>
+                        <br><br>
+                        <h1>Quality doesn´t has low Price</h1>
+                        <p class="parrafo-norm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <br>
+                        <div class="garra-img-der">
+                            <img src="img/img-garra-der.png" alt="garra">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="select row">
+                    <div class="col-1"></div>
+
+                    <div class="col-2">
+                        <a href="#" class="image-link">
+                            <img src="img/ico_rayo_b.png" alt="rayo">
+                            <p>Fastes Web Servers</p>
+                        </a>
+                    </div>
+
+                    <div class="col-2">
+                        <a href="#" class="image-link">
+                            <img src="img/ico_open_b.png" alt="open">
+                            <p>Open Source</p>
+                        </a>
+                    </div>
+
+                    <div class="col-2">
+                        <a href="#" class="image-link">
+                            <img src="img/ico_cubo_b.png" alt="cubo">
+                            <p>Compaked Hub</p>
+                        </a>
+                    </div>
+
+                    <div class="col-2">
+                        <a href="#" class="image-link">
+                            <img src="img/ico_medalla_b.png" alt="medalla">
+                            <p>Best CS in 2020</p>
+                        </a>
+                    </div>
+
+                    <div class="col-2">
+                        <a href="#" class="image-link">
+                            <img src="img/ico_carpeta_b.png" alt="carpeta">
+                            <p>Unlimited Mail Servers</p>
+                        </a>
+                    </div>
+
+                    <div class="col-1"></div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="container-fluid ">
+                <div class="row justify-content-center">
+                    <div class="col-md-3">
+                        <div class="pricing-card">
+                            <img src="img/team_4266981.png" alt="logo_selec">
+                            <h2 class="pricing-card__title">Starter Plan</h2>
+                            <p class="pricing-card__subtitle">Little teams and startups</p>
+                            <p class="pricing-card__price">$35.99</p>
+                            <h3 class="pricing-card__duration">Per Month</h3>
+                            <hr>
+                            <ul class="pricing-card__features">
+                                <li><span class="check-icon">✔</span> Unlimited back-end bandwidth</li>
+                                <li><span class="check-icon">✔</span> Unlimited inbound data transfer</li>
+                                <li><span class="check-icon">✔</span> Global deployment</li>
+                                <li><span class="check-icon">✔</span> On-demand provisioning</li>
+                                <li><span class="check-icon">✔</span> Flexible bandwidth packages</li>
+                                <li><span class="check-icon">✔</span> Extensive customization</li>
+                                <li><span class="check-icon">✔</span> 24x7 support</li>
+                            </ul>
+                            <a href="#pro" class="pricing-card__cta">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="pricing-card">
+                            <img src="img/portfolio_7005510.png" alt="logo_selec">
+                            <h2 class="pricing-card__title">Pro Business</h2>
+                            <p class="pricing-card__subtitle">Growing teams</p>
+                            <p class="pricing-card__price">$78.99</p>
+                            <h3 class="pricing-card__duration">Per Month</h3>
+                            <hr>
+                            <ul class="pricing-card__features">
+                                <li><span class="check-icon">✔</span> Unlimited back-end bandwidth</li>
+                                <li><span class="check-icon">✔</span> Unlimited inbound data transfer</li>
+                                <li><span class="check-icon">✔</span> Global deployment</li>
+                                <li><span class="check-icon">✔</span> On-demand provisioning</li>
+                                <li><span class="check-icon">✔</span> Flexible bandwidth packages</li>
+                                <li><span class="check-icon">✔</span> Extensive customization</li>
+                                <li><span class="check-icon">✔</span> 24x7 support</li>
+                            </ul>
+                            <a href="#pro" class="pricing-card__cta">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="pricing-card">
+                            <img src="img/badge_8396775.png" alt="logo_selec">
+                            <h2 class="pricing-card__title">Enterprise VIP</h2>
+                            <p class="pricing-card__subtitle">Large enterprises</p>
+                            <p class="pricing-card__price">$135.99</p>
+                            <h3 class="pricing-card__duration">Per Month</h3>
+                            <hr>
+                            <ul class="pricing-card__features">
+                                <li><span class="check-icon">✔</span> Unlimited back-end bandwidth</li>
+                                <li><span class="check-icon">✔</span> Unlimited inbound data transfer</li>
+                                <li><span class="check-icon">✔</span> Global deployment</li>
+                                <li><span class="check-icon">✔</span> On-demand provisioning</li>
+                                <li><span class="check-icon">✔</span> Flexible bandwidth packages</li>
+                                <li><span class="check-icon">✔</span> Extensive customization</li>
+                                <li><span class="check-icon">✔</span> 24x7 support</li>
+                            </ul>
+                            <a href="#pro" class="pricing-card__cta">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner5">
+
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="garra-img">
+                            <img src="img/img-garra.png" alt="chip_nube">
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+
+                    <div class="col-md-4"></div>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="text-diapositiva col-md-6 col-12 order-md-1 order-1">
+                        <button class="btn btn-diaposit" type="submit">Designed for Fucking Huge Projects</button>
+                        <br><br>
+                        <h1 class="titulo-diaposit">Designed For <span class="resaltado">Scale</span> & <span class="resaltado">Perfomance</span></h1>
+                        <p class="sub-parrafo-diaposit">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <p class="parrafo-diaposit">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+                            Egestas purus viverra accumsan in nisl nisi. Arcu cursur vitae <br>
+                            congue mauris rhoncus aenean vel elit scelerisque. In egestas erat <br>
+                            imperdiet sed euismod nisi porta lorem mollis.
+                        </p>
+                        <a href="#" class="dipo__button">Get Started</a>
+                    </div>
+        
+                    <!-- Imagen de la primera diapositiva -->
+                    <div class="imgen-diapositva col-md-6 col-12 order-md-2 order-2">
+                        <img src="img/B_perfomance_ver.png" alt="diapo">
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <!-- Imagen de la segunda diapositiva -->
+                    <div class="imgen-diapositva col-md-6 col-12 order-md-1 order-2">
+                        <img src="img/B_api_ver.png" alt="diapo">
+                    </div>
+        
+                    <!-- Texto de la segunda diapositiva -->
+                    <div class="text-diapositiva col-md-6 col-12 order-md-2 order-1">
+                        <button class="btn btn-diaposit" type="submit">Designed for Fucking Huge Projects</button>
+                        <br><br>
+                        <h1 class="titulo-diaposit">Quick & Easy <span class="resaltado">Deployment</span></h1>
+                        <p class="sub-parrafo-diaposit">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <p class="parrafo-diaposit">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+                            Egestas purus viverra accumsan in nisl nisi. Arcu cursur vitae <br>
+                            congue mauris rhoncus aenean vel elit scelerisque. In egestas erat <br>
+                            imperdiet sed euismod nisi porta lorem mollis.
+                        </p>
+                        <a href="#" class="dipo__button">Get Started</a>
+                    </div>
+                </div>
+            </div>
+
+        </secti on>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <section class="banner6">
+
+            <div class="container-fluid">
+                <div class="row">
+                    
+                    <div class="col-md-3"></div>
+                    <div class="sub-titulos col-md-6">
+                        <br>
+                        <button class="btn btn-sub" type="submit">Our Clients are so ficking Amazing!</button>
+                        <br><br>
+                        <h1>Our Best Clients Review</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="img-garra-der-b">
+                        <br>
+                        <img src="img/img-garra-der.png" alt="garra">
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+                <div class="row">
+                    <div class="imagen-map col-md-10">
+                        <img src="img/mapa_vector.png" alt="vector">
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="banner7">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="tarjeta col-12 col-md-8 d-flex flex-column flex-md-row align-items-center justify-content-between">
+                  <!-- Imagen de la izquierda -->
+                  <div class="col-12 col-md-3 text-center mb-3 mb-md-0">
+                    <div class="img-container">
+                      <img src="img/img-garra.png" alt="Garra" class="img-fluid">
+                    </div>
+                  </div>
+                  <!-- Contenido central -->
+                  <div class="text-tarjeta col-12 col-md-6 text-center mb-3 mb-md-0">
+                    <button class="btn btn-sub-card" type="submit">Our Clients are so freaking Amazing!</button>
+                    <h1>Our Best Clients Review</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <!-- Botón "Start For Free" -->
+                    <button class="btn btn-start-free">Start For Free</button>
+                  </div>
+                  <!-- Imagen de la derecha -->
+                  <div class="col-12 col-md-3 text-center">
+                    <div class="img-container">
+                      <img src="img/img-garra-der.png" alt="Garra" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="cont-1 col-md-6 col-12 mb-4">
+                    <div class="img-final">
+                        <img src="img/logo_cloudflex.png" alt="Logo" class="img-final">
+                        
+                        <div class="social-icons">
+                            <i class="bi bi-hypnotize"></i>
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-youtube"></i>
+                            <i class="bi bi-whatsapp"></i>
+                        </div>
+                    </div>
+                    
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br>
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+                        Egestas purus viverra accumsan in nisl nisi. Arcu bin cursus vitae <br>
+                        congue mauris rhoncus aenean vel elit tempor scelerisque. <br>
+                        In egestas erat imperdiet.
+                    </p>
+                </div>
+    
+                <div class="cont-2 col-md-6 col-12">
+                    <div class="text">
+                        <br>
+                        <h3>INTERNAL PAGE</h3>
+                        <br>
+                        <div class="nav-links">
+                            <span>Home</span>
+                            <span>News</span>
+                            <span>Blog</span>
+                            <br>
+                            <span>Service</span>
+                            <span>Contact</span>
+                            <span>Precicg</span>
+                            <br>
+                            <span>About us</span>
+                            <span>Support</span>
+                            <span>How we work?</span>
+                            <br>
+                            <span>FAQ</span>
+                            <span>Tarcking CNQ</span>
+                            <span>Partners</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="cont-1 col-md-6 col-12 mb-4">
+                    <br>
+                    <h3>NEWS LATTERS</h3>
+                    <br>
+                    
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedo <br>
+                        eiusmod tempor incididunt ut labore et dolore magna. 
+                    </p>
+                </div>
+    
+                <div class="cont-2 col-md-6 col-12">
+                    <div class="text">
+                        <br>
+                        <h3>PARTNERS</h3>
+                        <br>
+                        <div class="nav-links">
+                            <span>Bosco Inc</span>
+                            <span>Homenick</span>
+                            <span>Holey Ltd</span>
+                            <br>
+                            <span>Mante</span>
+                            <span>Emard</span>
+                            <span>Bayer Inc</span>
+                            <br>
+                            <span>Pollich</span>
+                            <span>Hamill Sons</span>
+                            <span>Christian LN</span>
+                            <br>
+                            <span>Runolfsdottir</span>
+                            <span>Romaguera</span>
+                            <span>Partners</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cont-12 col-md-12">
+                    <hr>
+                    <p>
+                        All right reservert - CloudFlexⒸ 2022
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    
+
+
+
+
+    <!-- Enlace al archivo de JavaScript de Bootstrap para permitir la funcionalidad interactiva (como el menú off-canvas) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Script para actualizar el texto del botón desplegable -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var dropdownItems = document.querySelectorAll('.dropdown-item');
+            var dropdownButton = document.getElementById('dropdownMenuButton');
+
+            dropdownItems.forEach(function (item) {
+                item.addEventListener('click', function () {
+                    var selectedValue = this.textContent;
+                    dropdownButton.textContent = selectedValue;
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
